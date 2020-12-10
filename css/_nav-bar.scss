@@ -1,0 +1,74 @@
+.nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #30363f;
+    background: linear-gradient(to right,#010409,#161b22);
+
+    .nav-left{
+        display: flex;
+        align-items: center;
+        font-family: 'Merienda', cursive;
+
+        h1{
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: orange;
+
+                @media only screen and (max-width: 420px){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .nav-right{
+        .nav-list{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 5px 0;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+
+            @media only screen and (max-width: 420px){
+                padding: 1px;
+            }
+            li{
+                padding: 7px 5px;
+                transition: .2s;
+
+                @media only screen and (max-width: 420px){
+                    padding: 3px 1.5px;
+                    transition: .2s;
+                }
+                a{
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: orange;
+                    padding: 3px 3px;
+
+                    @media only screen and (max-width: 420px){
+                        text-transform: lowercase;
+                        color: orange;
+                        padding: 1px;
+                        font-size: 13px;
+                    }
+                }
+            }
+            li:hover{
+                background-color: hsl(0, 0%, 99%);
+                border-radius: 8px 0 8px 0;
+
+                @media only screen and (max-width: 420px){
+                    border-radius: 0;
+                }
+                a{
+                    font-weight: 700;
+                    color: #30363f;
+                    background: linear-gradient(to right, orange, coral);
+                }
+            }
+        }
+        
+    }
+}
