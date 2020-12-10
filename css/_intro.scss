@@ -18,7 +18,9 @@
         padding: 5px 5px;
         padding-bottom: 0;
         border-radius: 15px;
-
+        .img-credit{
+            Font-size: 13px;
+        }
         .introH1{
             text-transform: capitalize;
             letter-spacing: 1.2px;
@@ -127,6 +129,10 @@
                     }
                 }
             }
+        }
+
+        .img-credit{
+            Font-size: 13px;
         }
         .intro2{
             width: auto;
